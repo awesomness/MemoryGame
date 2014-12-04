@@ -187,6 +187,8 @@ namespace MemoryGame_v1
                 {
                     firstClick.Image = null;
                     secondClick.Image = null;
+                    firstClick.Visible = false;
+                    secondClick.Visible = false;
                     firstClick = null;
                     secondClick = null;
                     return;
