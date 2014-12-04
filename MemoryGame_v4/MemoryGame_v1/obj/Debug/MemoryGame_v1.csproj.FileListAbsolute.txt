@@ -52,3 +52,6 @@ C:\Users\Linus\Desktop\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Form2
 C:\Users\Linus\Desktop\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.DialogBox.resources
 C:\Users\Linus\Desktop\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Properties.Resources.resources
 C:\Users\Linus\Desktop\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.csproj.GenerateResource.Cache
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.exe.config
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.exe
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.pdb
