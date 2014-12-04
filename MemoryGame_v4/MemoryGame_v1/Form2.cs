@@ -12,6 +12,12 @@ namespace MemoryGame_v1
 {
     public partial class Form2 : Form
     {
+        private bool player1Turn; // Alla spelares turn.
+        private bool player2Turn;
+        private bool player3Turn;
+        private bool player4Turn;
+        private bool player5Turn;
+
         private string diff { get; set; }   // Medlemsvariabel för Difficulty.
         private string Theme { get; set; }  // Medlemsvariabel för Tema.
         private string Board { get; set; }  // Medlemsvariabel för Board.
@@ -169,16 +175,16 @@ namespace MemoryGame_v1
                 {
                     firstClick = clickedPicture;
                     firstClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
-                    firstClick.Image.Tag = clickedPicture.Tag; //test, kanske inte funkar
+                    firstClick.Tag = clickedPicture.Tag;
                     return;
                 }
 
                 secondClick = clickedPicture;
                 secondClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
-                secondClick.Image.Tag = clickedPicture.Tag; //test, kanske inte funkar
+                secondClick.Tag = clickedPicture.Tag;
 
-                
-                if (firstClick.Tag.Equals (secondClick.Tag))
+
+                if (firstClick.Tag.Equals(secondClick.Tag))
                 {
                     firstClick.Image = null;
                     secondClick.Image = null;
@@ -204,6 +210,43 @@ namespace MemoryGame_v1
                 labelTimeCounter.Text = "Time's up!";
 
             }
-        } 
+        }
+        private void AddScorePlayers()  // Funktion för att lägga till Scores till spelare.
+        {
+            int scorePlayer1 = 0;
+            int scorePlayer2 = 0;
+            int scorePlayer3 = 0;
+            int scorePlayer4 = 0;
+            int scorePlayer5 = 0;
+
+            if (player1Turn == true)
+            {
+                ++scorePlayer1;
+                labelScorePlayer1.Text = scorePlayer1.ToString();
+            }
+
+            if (player2Turn == true)
+            {
+                ++scorePlayer2;
+                labelScorePlayer2.Text = scorePlayer2.ToString();
+            }
+
+            if (player3Turn == true)
+            {
+                ++scorePlayer3;
+                labelScorePlayer3.Text = scorePlayer3.ToString();
+            }
+            if (player4Turn == true)
+            {
+                ++scorePlayer4;
+                labelScorePlayer4.Text = scorePlayer4.ToString();
+            }
+            if (player5Turn == true)
+            {
+                ++scorePlayer5;
+                labelScorePlayer5.Text = scorePlayer5.ToString();
+            }
+
+        }
     }
 }

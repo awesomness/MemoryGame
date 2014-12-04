@@ -77,3 +77,14 @@ C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug
 C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.DialogBox.resources
 C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Properties.Resources.resources
 C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.csproj.GenerateResource.Cache
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.exe.config
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.exe
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.pdb
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.exe
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.pdb
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.csprojResolveAssemblyReference.cache
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Form1.resources
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Form2.resources
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.DialogBox.resources
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Properties.Resources.resources
+C:\Users\erik__000\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.csproj.GenerateResource.Cache
