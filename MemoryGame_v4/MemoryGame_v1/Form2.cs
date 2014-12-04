@@ -185,8 +185,22 @@ namespace MemoryGame_v1
 
                 if (firstClick.Tag.Equals(secondClick.Tag))
                 {
+<<<<<<< Updated upstream
                     firstClick = null;
                     secondClick = null;
+=======
+                    firstClick.Image = null;
+                    secondClick.Image = null;
+                    firstClick = null;
+                    secondClick = null;
+                    currentScore = currentScore + 1;
+                    labelScorePlayer1.Text = currentScore.ToString();
+
+              
+                  //  firstClick.Click = false;
+                    
+
+>>>>>>> Stashed changes
                     return;
                 }
                 timer1.Start();
