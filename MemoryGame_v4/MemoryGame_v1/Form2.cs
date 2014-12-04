@@ -33,7 +33,6 @@ namespace MemoryGame_v1
         Random rnd = new Random();
 
         int timeLeft;
-        int currentScore = 0; //TEST
 
         PictureBox[] picBoxes = new PictureBox[16];
 
@@ -188,8 +187,6 @@ namespace MemoryGame_v1
                 {
                     firstClick = null;
                     secondClick = null;
-                    currentScore = currentScore + 1;
-                    labelScorePlayer1.Text = currentScore.ToString();
                     return;
                 }
                 timer1.Start();
