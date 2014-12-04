@@ -169,13 +169,15 @@ namespace MemoryGame_v1
                 {
                     firstClick = clickedPicture;
                     firstClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
+                    firstClick.Image.Tag = clickedPicture.Tag; //test, kanske inte funkar
                     return;
                 }
 
                 secondClick = clickedPicture;
                 secondClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
+                secondClick.Image.Tag = clickedPicture.Tag; //test, kanske inte funkar
 
-                if (firstClick.Image == secondClick.Image)
+                if (firstClick.Image.Tag == secondClick.Image.Tag)
                 {
                     firstClick = null;
                     secondClick = null;
