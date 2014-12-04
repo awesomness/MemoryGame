@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62753E79-6B41-44CE-8AAE-15CBDB015792}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MemoryGame_v1</RootNamespace>
+    <AssemblyName>MemoryGame_v1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogBox.Designer.cs">
+      <DependentUpon>DialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox.resx">
+      <DependentUpon>DialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katt60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestBakgrund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\altwinner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bilarbakgrund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hundarbakgrund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katterbakgrund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fergkortrygg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svitkortrygg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hund60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil49.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bil60.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
