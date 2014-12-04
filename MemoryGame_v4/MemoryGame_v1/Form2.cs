@@ -119,7 +119,7 @@ namespace MemoryGame_v1
             secondClick = null;
         }
 
-        private void AssignImagesToPictureBoxes()
+        private void AssignImagesToPictureBoxes() //ANDERS ANDERS ANDERS
         {
             //1. ERHÅLLA LISTA MED 8 UNIKA INTS
             //1.5 ITERERA 8 GÅNGER
@@ -167,7 +167,7 @@ namespace MemoryGame_v1
             PictureBox clickedPicture = sender as PictureBox;
 
             if (clickedPicture != null)
-            {
+            {       //ANDERS ANDERS ANDERS ANDERS
                 if (clickedPicture.Image == catList1.Images[Convert.ToInt32(clickedPicture.Tag)])
                     return;
 
