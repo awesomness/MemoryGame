@@ -129,6 +129,8 @@ namespace MemoryGame_v1
 
             //4. SLUMPA FRAM EN PICBOX VARS TAG ÄR NULL
             //5. ASSIGNA ANDRA KATTBILDEN
+
+            //BASHAR BASHAR BASHAR BASHAR
             var countCards = Convert.ToInt32(Board);
             int rand;
             int counter = 0;
