@@ -123,6 +123,7 @@ namespace MemoryGame_v1
             }
             // hej
             // EDDIEEEEEEEEEEEEEEEEEEEEEEEEE
+            // BABBABABABABABABABAABABABABJJJJJJSSS!!!
             //2. SLUMPA FRAM EN PICBOX VARS TAG ÄR NULL
             //3. ASSIGN FÖRSTA KATTBILDEN
 
