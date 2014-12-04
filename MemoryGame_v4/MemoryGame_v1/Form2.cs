@@ -121,16 +121,13 @@ namespace MemoryGame_v1
             {
                 uniqInts.Enqueue(i + 1);
             }
-            // hej
-            // EDDIEEEEEEEEEEEEEEEEEEEEEEEEE
-            // BABBABABABABABABABAABABABABJJJJJJSSS!!!
+
             //2. SLUMPA FRAM EN PICBOX VARS TAG ÄR NULL
             //3. ASSIGN FÖRSTA KATTBILDEN
 
             //4. SLUMPA FRAM EN PICBOX VARS TAG ÄR NULL
             //5. ASSIGNA ANDRA KATTBILDEN
 
-            //BASHAR BASHAR BASHAR BASHAR
             var countCards = Convert.ToInt32(Board);
             int rand;
             int counter = 0;
