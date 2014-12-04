@@ -66,3 +66,6 @@ C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug
 \\psf\Home\Documents\SHSU14\Agila Projekt\JOBB\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.DialogBox.resources
 \\psf\Home\Documents\SHSU14\Agila Projekt\JOBB\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Properties.Resources.resources
 \\psf\Home\Documents\SHSU14\Agila Projekt\JOBB\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.csproj.GenerateResource.Cache
+C:\Users\Bashar\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.exe.config
+C:\Users\Bashar\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.exe
+C:\Users\Bashar\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.pdb
