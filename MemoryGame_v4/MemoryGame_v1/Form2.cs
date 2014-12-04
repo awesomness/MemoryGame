@@ -122,7 +122,7 @@ namespace MemoryGame_v1
                 uniqInts.Enqueue(i + 1);
             }
             // hej
-            //
+            // EDDIEEEEEEEEEEEEEEEEEEEEEEEEE
             //2. SLUMPA FRAM EN PICBOX VARS TAG ÄR NULL
             //3. ASSIGN FÖRSTA KATTBILDEN
 
