@@ -177,10 +177,11 @@ namespace MemoryGame_v1
                 secondClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
                 secondClick.Image.Tag = clickedPicture.Tag; //test, kanske inte funkar
 
-                if (firstClick.Image.Tag == secondClick.Image.Tag)
+                
+                if (firstClick.Tag.Equals (secondClick.Tag))
                 {
-                    firstClick = null;
-                    secondClick = null;
+                    firstClick.Image = null;
+                    secondClick.Image = null;
                     return;
                 }
                 timer1.Start();
