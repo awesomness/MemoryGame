@@ -479,7 +479,68 @@
             // 
             // catList1
             // 
+            this.catList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("catList1.ImageStream")));
             this.catList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.catList1.Images.SetKeyName(0, "katt1.png");
+            this.catList1.Images.SetKeyName(1, "katt2.png");
+            this.catList1.Images.SetKeyName(2, "katt3.png");
+            this.catList1.Images.SetKeyName(3, "katt4.png");
+            this.catList1.Images.SetKeyName(4, "katt5.png");
+            this.catList1.Images.SetKeyName(5, "katt6.png");
+            this.catList1.Images.SetKeyName(6, "katt7.png");
+            this.catList1.Images.SetKeyName(7, "katt8.png");
+            this.catList1.Images.SetKeyName(8, "katt9.png");
+            this.catList1.Images.SetKeyName(9, "katt10.png");
+            this.catList1.Images.SetKeyName(10, "katt11.png");
+            this.catList1.Images.SetKeyName(11, "katt12.png");
+            this.catList1.Images.SetKeyName(12, "katt13.png");
+            this.catList1.Images.SetKeyName(13, "katt14.png");
+            this.catList1.Images.SetKeyName(14, "katt15.png");
+            this.catList1.Images.SetKeyName(15, "katt16.png");
+            this.catList1.Images.SetKeyName(16, "katt17.png");
+            this.catList1.Images.SetKeyName(17, "katt18.png");
+            this.catList1.Images.SetKeyName(18, "katt19.png");
+            this.catList1.Images.SetKeyName(19, "katt20.png");
+            this.catList1.Images.SetKeyName(20, "katt21.png");
+            this.catList1.Images.SetKeyName(21, "katt22.png");
+            this.catList1.Images.SetKeyName(22, "katt23.png");
+            this.catList1.Images.SetKeyName(23, "katt24.png");
+            this.catList1.Images.SetKeyName(24, "katt25.png");
+            this.catList1.Images.SetKeyName(25, "katt26.png");
+            this.catList1.Images.SetKeyName(26, "katt27.png");
+            this.catList1.Images.SetKeyName(27, "katt28.png");
+            this.catList1.Images.SetKeyName(28, "katt29.png");
+            this.catList1.Images.SetKeyName(29, "katt30.png");
+            this.catList1.Images.SetKeyName(30, "katt31.png");
+            this.catList1.Images.SetKeyName(31, "katt32.png");
+            this.catList1.Images.SetKeyName(32, "katt33.png");
+            this.catList1.Images.SetKeyName(33, "katt34.png");
+            this.catList1.Images.SetKeyName(34, "katt35.png");
+            this.catList1.Images.SetKeyName(35, "katt36.png");
+            this.catList1.Images.SetKeyName(36, "katt37.png");
+            this.catList1.Images.SetKeyName(37, "katt38.png");
+            this.catList1.Images.SetKeyName(38, "katt39.png");
+            this.catList1.Images.SetKeyName(39, "katt40.png");
+            this.catList1.Images.SetKeyName(40, "katt41.png");
+            this.catList1.Images.SetKeyName(41, "katt42.png");
+            this.catList1.Images.SetKeyName(42, "katt43.png");
+            this.catList1.Images.SetKeyName(43, "katt44.png");
+            this.catList1.Images.SetKeyName(44, "katt45.png");
+            this.catList1.Images.SetKeyName(45, "katt46.png");
+            this.catList1.Images.SetKeyName(46, "katt47.png");
+            this.catList1.Images.SetKeyName(47, "katt48.png");
+            this.catList1.Images.SetKeyName(48, "katt49.png");
+            this.catList1.Images.SetKeyName(49, "katt50.png");
+            this.catList1.Images.SetKeyName(50, "katt51.png");
+            this.catList1.Images.SetKeyName(51, "katt52.png");
+            this.catList1.Images.SetKeyName(52, "katt53.png");
+            this.catList1.Images.SetKeyName(53, "katt54.png");
+            this.catList1.Images.SetKeyName(54, "katt55.png");
+            this.catList1.Images.SetKeyName(55, "katt56.png");
+            this.catList1.Images.SetKeyName(56, "katt57.png");
+            this.catList1.Images.SetKeyName(57, "katt58.png");
+            this.catList1.Images.SetKeyName(58, "katt59.png");
+            this.catList1.Images.SetKeyName(59, "katt60.png");
             // 
             // RoundTimer
             // 

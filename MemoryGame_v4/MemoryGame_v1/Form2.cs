@@ -140,12 +140,17 @@ namespace MemoryGame_v1
                     rand = rnd.Next(countCards);
                     if (picBoxes[rand].Tag == null)
                     {
-                        picBoxes[rand].Image = catList1.Images[i];
+                        //picBoxes[rand].Image = catList1.Images[i];
                         picBoxes[rand].Tag = i;
                         counter++;
                     }
                 }
-            }         
+            }
+
+            for(int i=0; i<countCards; i++)
+            {
+                catList1.Images[i].Tag = i;
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -157,20 +162,20 @@ namespace MemoryGame_v1
 
             if (clickedPicture != null)
             {
-                if (clickedPicture.Image == catList1.Images[clickedPicture.Tag.ToString()])
+                if (clickedPicture.Image == catList1.Images[Convert.ToInt32(clickedPicture.Tag)])
                     return;
 
                 if (firstClick == null)
                 {
                     firstClick = clickedPicture;
-                    firstClick.Image = catList1.Images[clickedPicture.Tag.ToString()];
+                    firstClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
                     return;
                 }
 
                 secondClick = clickedPicture;
-                secondClick.Image = catList1.Images[clickedPicture.Tag.ToString()];
+                secondClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
 
-                if (firstClick.Tag == secondClick.Tag)
+                if (firstClick.Image == secondClick.Image)
                 {
                     firstClick = null;
                     secondClick = null;

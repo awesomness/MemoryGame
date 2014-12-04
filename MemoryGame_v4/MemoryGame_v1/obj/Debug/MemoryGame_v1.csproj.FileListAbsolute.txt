@@ -69,3 +69,11 @@ C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug
 C:\Users\Bashar\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.exe.config
 C:\Users\Bashar\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.exe
 C:\Users\Bashar\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.pdb
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.exe
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\bin\Debug\MemoryGame_v1.pdb
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.csprojResolveAssemblyReference.cache
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Form1.resources
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Form2.resources
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.DialogBox.resources
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.Properties.Resources.resources
+C:\Users\Linus\Documents\GitHub\MemoryGame\MemoryGame_v4\MemoryGame_v1\obj\Debug\MemoryGame_v1.csproj.GenerateResource.Cache
