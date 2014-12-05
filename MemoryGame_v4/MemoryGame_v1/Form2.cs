@@ -37,12 +37,15 @@ namespace MemoryGame_v1
 
         PictureBox firstClick = null;
         PictureBox secondClick = null;
+        int bildTestat;
 
         Random rnd = new Random();
 
+        int scorePlayer1 = 0;
         int timeLeft;
+        
 
-        PictureBox[] picBoxes = new PictureBox[16];
+        PictureBox[] picBoxes = new PictureBox[12];
 
         Queue<int> uniqInts = new Queue<int>();
 
@@ -52,6 +55,24 @@ namespace MemoryGame_v1
         {
             InitializeComponent();
 
+            this.buttonTestaVinnare.Visible = false;
+
+            if(player2Name == "")
+            {
+                labelScorePlayer2.Visible = false;
+            }
+            if (player3Name == "")
+            {
+                labelScorePlayer3.Visible = false;
+            }
+            if (player4Name == "")
+            {
+                labelScorePlayer4.Visible = false;
+            }
+            if (player5Name == "")
+            {
+                labelScorePlayer5.Visible = false;
+            }
             //Variabler
             labelPlayer1.Text = player1Name;
             labelPlayer2.Text = player2Name;
@@ -67,6 +88,8 @@ namespace MemoryGame_v1
             IsCheckedP3 = isCheckedP3;
             IsCheckedP4 = isCheckedP4;
             IsCheckedP5 = isCheckedP5;
+
+            labelPlayersTurn.Text = labelPlayer1.Text + "'s turn!";
 
             //Timer
             timeLeft = Convert.ToInt32(RoundTime);
@@ -88,12 +111,8 @@ namespace MemoryGame_v1
             picBoxes[9] = pictureBox10;
             picBoxes[10] = pictureBox11;
             picBoxes[11] = pictureBox12;
-            picBoxes[12] = pictureBox13;
-            picBoxes[13] = pictureBox14;
-            picBoxes[14] = pictureBox15;
-            picBoxes[15] = pictureBox16;
 
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 12; i++)
             {
                 picBoxes[i].Image = Properties.Resources.svitkortrygg;
             }
@@ -110,8 +129,8 @@ namespace MemoryGame_v1
         private void button1_Click(object sender, EventArgs e)
         {
             using (var a = new DialogBox(labelScorePlayer1.Text, labelPlayer1.Text))
-            {   // Anrop via konstruktor för att få över spelarens score och spelarens namn till Dialogrutan/resultatrutan.
-                if (a.ShowDialog(this) == DialogResult.OK)   // dialogrutan tar alltså emot 2 strings i detta fall.
+            {
+                if (a.ShowDialog(this) == DialogResult.OK)
                 {
                 }
             }
@@ -126,22 +145,23 @@ namespace MemoryGame_v1
 
             firstClick = null;
             secondClick = null;
+
+            RoundTimer.Stop();
+            MessageBox.Show("NEXT PLAYER GET READY!!!");
+            timeLeft = Convert.ToInt32(RoundTime);
+            labelTimeCounter.Text = RoundTime;
+            RoundTimer.Start();    
         }
 
-        private void AssignImagesToPictureBoxes() //ANDERS ANDERS ANDERS
+        private void AssignImagesToPictureBoxes()
         {
             //1. ERHÅLLA LISTA MED 8 UNIKA INTS
             //1.5 ITERERA 8 GÅNGER
-            for (int i = 0; i<8; i++)
+            for (int i = 0; i<6; i++)
             {
                 uniqInts.Enqueue(i + 1);
             }
-
-            //2. SLUMPA FRAM EN PICBOX VARS TAG ÄR NULL
-            //3. ASSIGN FÖRSTA KATTBILDEN
-
-            //4. SLUMPA FRAM EN PICBOX VARS TAG ÄR NULL
-            //5. ASSIGNA ANDRA KATTBILDEN
+            //anders tänker
 
             var countCards = Convert.ToInt32(Board);
             int rand;
@@ -155,7 +175,6 @@ namespace MemoryGame_v1
                     rand = rnd.Next(countCards);
                     if (picBoxes[rand].Tag == null)
                     {
-                        //picBoxes[rand].Image = catList1.Images[i];
                         picBoxes[rand].Tag = i;
                         counter++;
                     }
@@ -168,65 +187,25 @@ namespace MemoryGame_v1
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            if (timer1.Enabled == true)
-                return;
-
-            PictureBox clickedPicture = sender as PictureBox;
-
-                //ANDERS ANDERS ANDERS ANDERS
-            //for(int i=0; i<Convert.ToInt32(Board); i++)
-            //{
-                //if (clickedPicture.Image == null)
-                //    return;
-            //}
-            //if (clickedPicture.Image == catList1.Images[(int)clickedPicture.Tag])
-            //        return;
-
-            //if (this.catList contains ??????
-
-            if (firstClick == null)
-            {
-                firstClick = clickedPicture;
-                firstClick.Image = catList1.Images[(int)clickedPicture.Tag];
-                firstClick.Tag = clickedPicture.Tag;
-                return;
-            }
-            else if (secondClick == null)
-            {
-                secondClick = clickedPicture;
-                secondClick.Image = catList1.Images[(int)clickedPicture.Tag];
-                secondClick.Tag = clickedPicture.Tag;
-
-                if (firstClick.Tag.Equals(secondClick.Tag))
-                {
-                    timerPairFound.Enabled = true;
-                    return;
-                }
-                //timer1.Start();
-                timer1.Enabled = true;
-            }
-        }
-
         private void RoundTimer_Tick(object sender, EventArgs e)
         {
             if (timeLeft > 0)
             {
-                // Display the new time left 
-                // by updating the Time Left label.
                 timeLeft = timeLeft - 1;
-                labelTimeCounter.Text = timeLeft + " seconds";
+                labelTimeCounter.Text = timeLeft.ToString();
             }
             else
             {
-                // If the user ran out of time, stop the timer, show 
                 RoundTimer.Stop();
-                labelTimeCounter.Text = "Time's up!";
-
+                MessageBox.Show("Time's up!\n NEXT PLAYER GET READY!!!");
+                timeLeft = Convert.ToInt32(RoundTime);
+                labelTimeCounter.Text = RoundTime;
+                RoundTimer.Start();        
             }
         }
-        private void AddScorePlayers()  // Funktion för att lägga till Scores till spelare.
+
+        // Funktion för att lägga till Scores till spelare.
+        private void AddScorePlayers()
         {
             int scorePlayer1 = 0;
             int scorePlayer2 = 0;
@@ -274,17 +253,76 @@ namespace MemoryGame_v1
             secondClick.Visible = false;
             firstClick = null;
             secondClick = null;
+            this.scorePlayer1 = this.scorePlayer1 + 1;
+            labelScorePlayer1.Text = scorePlayer1.ToString();
+
+            RoundTimer.Stop();
+            timeLeft = Convert.ToInt32(RoundTime);
+            labelTimeCounter.Text = RoundTime;
+            RoundTimer.Start();    
+
+            if(this.scorePlayer1 == 6)
+            {
+                this.RoundTimer.Enabled = false;
+                this.RoundTimer.Stop();
+                using (var a = new DialogBox(labelScorePlayer1.Text, labelPlayer1.Text))
+                {
+                    if (a.ShowDialog(this) == DialogResult.OK) 
+                    {
+                    }
+                }
+                this.Hide();
+            }
         }
 
-        private void PlayerList()   // Listan av alla spelare.
+        private void PlayerList()
         {
-            // Listan ska innehålla playerns score, namn, om den är AI, eller inte och om det är playerns turn eller inte.
             Players.Add(new Players(labelScorePlayer1.Text, labelPlayer1.Text, isPlayer1Computer, player1Turn));
             Players.Add(new Players(labelScorePlayer2.Text, labelPlayer2.Text, isPlayer2Computer, player2Turn));
             Players.Add(new Players(labelScorePlayer3.Text, labelPlayer3.Text, isPlayer3Computer, player3Turn));
             Players.Add(new Players(labelScorePlayer4.Text, labelPlayer4.Text, isPlayer4Computer, player4Turn));
             Players.Add(new Players(labelScorePlayer5.Text, labelPlayer5.Text, isPlayer5Computer, player5Turn));
+        }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled == true)
+                return;
+
+            PictureBox clickedPicture = sender as PictureBox;
+
+            //ANDERS ANDERS ANDERS ANDERS
+            //for(int i=0; i<Convert.ToInt32(Board); i++)
+            //{
+            //if (clickedPicture.Image == null)
+            //    return;
+            //}
+            //if (clickedPicture.Image == catList1.Images[(int)clickedPicture.Tag])
+            //        return;
+
+            //if (this.catList contains ??????
+
+
+            if (firstClick == null)
+            {
+                firstClick = clickedPicture;
+                firstClick.Image = catList1.Images[(int)clickedPicture.Tag];
+                firstClick.Tag = clickedPicture.Tag;
+                return;
+            }
+            else if (secondClick == null)
+            {
+                secondClick = clickedPicture;
+                secondClick.Image = catList1.Images[(int)clickedPicture.Tag];
+                secondClick.Tag = clickedPicture.Tag;
+
+                if (firstClick.Tag.Equals(secondClick.Tag))
+                {
+                    timerPairFound.Enabled = true;
+                    return;
+                }
+                timer1.Enabled = true;
+            }
         }
     }
 }

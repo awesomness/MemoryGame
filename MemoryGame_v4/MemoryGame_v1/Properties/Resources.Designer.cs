@@ -83,6 +83,16 @@ namespace MemoryGame_v1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bakgrundbla {
+            get {
+                object obj = ResourceManager.GetObject("bakgrundbla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bil1 {
             get {
                 object obj = ResourceManager.GetObject("bil1", resourceCulture);

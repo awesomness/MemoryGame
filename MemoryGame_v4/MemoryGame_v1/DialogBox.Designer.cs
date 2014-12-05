@@ -37,10 +37,9 @@
             // buttonMenu
             // 
             this.buttonMenu.Font = new System.Drawing.Font("Segoe Print", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMenu.Location = new System.Drawing.Point(136, 336);
-            this.buttonMenu.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonMenu.Location = new System.Drawing.Point(68, 175);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(150, 56);
+            this.buttonMenu.Size = new System.Drawing.Size(75, 29);
             this.buttonMenu.TabIndex = 1;
             this.buttonMenu.Text = "Menu";
             this.buttonMenu.UseVisualStyleBackColor = true;
@@ -49,10 +48,9 @@
             // buttonQuit
             // 
             this.buttonQuit.Font = new System.Drawing.Font("Segoe Print", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuit.Location = new System.Drawing.Point(424, 336);
-            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6);
+            this.buttonQuit.Location = new System.Drawing.Point(212, 175);
             this.buttonQuit.Name = "buttonQuit";
-            this.buttonQuit.Size = new System.Drawing.Size(150, 56);
+            this.buttonQuit.Size = new System.Drawing.Size(75, 29);
             this.buttonQuit.TabIndex = 2;
             this.buttonQuit.Text = "Quit";
             this.buttonQuit.UseVisualStyleBackColor = true;
@@ -62,12 +60,11 @@
             // 
             this.labelWinner.AutoSize = true;
             this.labelWinner.BackColor = System.Drawing.Color.Transparent;
-            this.labelWinner.Font = new System.Drawing.Font("Segoe Print", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWinner.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWinner.ForeColor = System.Drawing.Color.White;
-            this.labelWinner.Location = new System.Drawing.Point(288, 208);
-            this.labelWinner.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelWinner.Location = new System.Drawing.Point(128, 100);
             this.labelWinner.Name = "labelWinner";
-            this.labelWinner.Size = new System.Drawing.Size(123, 37);
+            this.labelWinner.Size = new System.Drawing.Size(93, 28);
             this.labelWinner.TabIndex = 3;
             this.labelWinner.Text = "who won?";
             // 
@@ -75,29 +72,27 @@
             // 
             this.labelScore.AutoSize = true;
             this.labelScore.BackColor = System.Drawing.Color.Transparent;
-            this.labelScore.Font = new System.Drawing.Font("Segoe Print", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelScore.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelScore.ForeColor = System.Drawing.Color.White;
-            this.labelScore.Location = new System.Drawing.Point(288, 272);
-            this.labelScore.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.labelScore.Location = new System.Drawing.Point(128, 136);
             this.labelScore.Name = "labelScore";
-            this.labelScore.Size = new System.Drawing.Size(124, 37);
+            this.labelScore.Size = new System.Drawing.Size(91, 28);
             this.labelScore.TabIndex = 4;
             this.labelScore.Text = "the score?";
             // 
             // DialogBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MemoryGame_v1.Properties.Resources.altwinner;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(694, 444);
+            this.ClientSize = new System.Drawing.Size(347, 231);
             this.ControlBox = false;
             this.Controls.Add(this.labelScore);
             this.Controls.Add(this.labelWinner);
             this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.buttonMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DialogBox";

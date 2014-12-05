@@ -36,7 +36,7 @@ namespace MemoryGame_v1
                 a += 2;
             }
 
-            comboBoxBoard.SelectedIndex = 7;
+            comboBoxBoard.SelectedIndex = 5;
 
             comboBoxDifficulty.Items.Add("Easy");
             comboBoxDifficulty.Items.Add("Medium");
@@ -148,7 +148,6 @@ namespace MemoryGame_v1
 
         private void buttonRemovePlayer_Click(object sender, EventArgs e)
         {
-
             if (labelPlayer5.Visible == true)
             {
                 this.HidePlayer5();
@@ -165,7 +164,8 @@ namespace MemoryGame_v1
             {
                 this.HidePlayer2();
             }
-            else if (labelPlayer2.Visible == false)
+
+            if (labelPlayer2.Visible == false)
             {
                 buttonRemovePlayer.Visible = false;
             }
