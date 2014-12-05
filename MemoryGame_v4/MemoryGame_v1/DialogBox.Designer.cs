@@ -28,30 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonPlayAgain = new System.Windows.Forms.Button();
             this.buttonMenu = new System.Windows.Forms.Button();
             this.buttonQuit = new System.Windows.Forms.Button();
             this.labelWinner = new System.Windows.Forms.Label();
             this.labelScore = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // buttonPlayAgain
-            // 
-            this.buttonPlayAgain.Font = new System.Drawing.Font("Segoe Print", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPlayAgain.Location = new System.Drawing.Point(80, 336);
-            this.buttonPlayAgain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.buttonPlayAgain.Name = "buttonPlayAgain";
-            this.buttonPlayAgain.Size = new System.Drawing.Size(150, 56);
-            this.buttonPlayAgain.TabIndex = 0;
-            this.buttonPlayAgain.Text = "Play again";
-            this.buttonPlayAgain.UseVisualStyleBackColor = true;
-            this.buttonPlayAgain.Click += new System.EventHandler(this.buttonPlayAgain_Click);
-            // 
             // buttonMenu
             // 
             this.buttonMenu.Font = new System.Drawing.Font("Segoe Print", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMenu.Location = new System.Drawing.Point(272, 336);
-            this.buttonMenu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonMenu.Location = new System.Drawing.Point(136, 336);
+            this.buttonMenu.Margin = new System.Windows.Forms.Padding(6);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.Size = new System.Drawing.Size(150, 56);
             this.buttonMenu.TabIndex = 1;
@@ -62,8 +49,8 @@
             // buttonQuit
             // 
             this.buttonQuit.Font = new System.Drawing.Font("Segoe Print", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQuit.Location = new System.Drawing.Point(464, 336);
-            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonQuit.Location = new System.Drawing.Point(424, 336);
+            this.buttonQuit.Margin = new System.Windows.Forms.Padding(6);
             this.buttonQuit.Name = "buttonQuit";
             this.buttonQuit.Size = new System.Drawing.Size(150, 56);
             this.buttonQuit.TabIndex = 2;
@@ -109,9 +96,8 @@
             this.Controls.Add(this.labelWinner);
             this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.buttonMenu);
-            this.Controls.Add(this.buttonPlayAgain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DialogBox";
@@ -127,7 +113,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonPlayAgain;
         private System.Windows.Forms.Button buttonMenu;
         private System.Windows.Forms.Button buttonQuit;
         private System.Windows.Forms.Label labelWinner;
