@@ -148,6 +148,7 @@ namespace MemoryGame_v1
 
         private void buttonRemovePlayer_Click(object sender, EventArgs e)
         {
+
             if (labelPlayer5.Visible == true)
             {
                 this.HidePlayer5();
@@ -163,6 +164,10 @@ namespace MemoryGame_v1
             else if (labelPlayer2.Visible == true)
             {
                 this.HidePlayer2();
+            }
+            else if (labelPlayer2.Visible == false)
+            {
+                buttonRemovePlayer.Visible = false;
             }
         }
     }

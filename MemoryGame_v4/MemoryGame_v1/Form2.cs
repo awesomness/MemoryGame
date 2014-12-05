@@ -18,6 +18,14 @@ namespace MemoryGame_v1
         private bool player4Turn;
         private bool player5Turn;
 
+        private bool isPlayer1Computer { get; set; }
+        private bool isPlayer2Computer { get; set; }
+        private bool isPlayer3Computer { get; set; }
+        private bool isPlayer4Computer { get; set; }
+        private bool isPlayer5Computer { get; set; }
+
+        List<Players> Players = new List<Players>();
+
         private string diff { get; set; }   // Medlemsvariabel för Difficulty.
         private string Theme { get; set; }  // Medlemsvariabel för Tema.
         private string Board { get; set; }  // Medlemsvariabel för Board.
@@ -107,6 +115,7 @@ namespace MemoryGame_v1
                 {
                 }
             }
+            this.Hide();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -166,34 +175,37 @@ namespace MemoryGame_v1
 
             PictureBox clickedPicture = sender as PictureBox;
 
-            if (clickedPicture != null)
-            {       //ANDERS ANDERS ANDERS ANDERS
-                if (clickedPicture.Image == catList1.Images[Convert.ToInt32(clickedPicture.Tag)])
-                    return;
+                //ANDERS ANDERS ANDERS ANDERS
+            //for(int i=0; i<Convert.ToInt32(Board); i++)
+            //{
+                //if (clickedPicture.Image == null)
+                //    return;
+            //}
+            //if (clickedPicture.Image == catList1.Images[(int)clickedPicture.Tag])
+            //        return;
 
-                if (firstClick == null)
-                {
-                    firstClick = clickedPicture;
-                    firstClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
-                    firstClick.Tag = clickedPicture.Tag;
-                    return;
-                }
+            //if (this.catList contains ??????
 
+            if (firstClick == null)
+            {
+                firstClick = clickedPicture;
+                firstClick.Image = catList1.Images[(int)clickedPicture.Tag];
+                firstClick.Tag = clickedPicture.Tag;
+                return;
+            }
+            else if (secondClick == null)
+            {
                 secondClick = clickedPicture;
-                secondClick.Image = catList1.Images[Convert.ToInt32(clickedPicture.Tag)];
+                secondClick.Image = catList1.Images[(int)clickedPicture.Tag];
                 secondClick.Tag = clickedPicture.Tag;
 
                 if (firstClick.Tag.Equals(secondClick.Tag))
                 {
-                    firstClick.Image = null;
-                    secondClick.Image = null;
-                    firstClick.Visible = false;
-                    secondClick.Visible = false;
-                    firstClick = null;
-                    secondClick = null;
+                    timerPairFound.Enabled = true;
                     return;
                 }
-                timer1.Start();
+                //timer1.Start();
+                timer1.Enabled = true;
             }
         }
 
@@ -249,6 +261,29 @@ namespace MemoryGame_v1
                 ++scorePlayer5;
                 labelScorePlayer5.Text = scorePlayer5.ToString();
             }
+
+        }
+
+        private void timerPairFound_Tick(object sender, EventArgs e)
+        {
+            timerPairFound.Stop();
+
+            firstClick.Image = null;
+            secondClick.Image = null;
+            firstClick.Visible = false;
+            secondClick.Visible = false;
+            firstClick = null;
+            secondClick = null;
+        }
+
+        private void PlayerList()   // Listan av alla spelare.
+        {
+            // Listan ska innehålla playerns score, namn, om den är AI, eller inte och om det är playerns turn eller inte.
+            Players.Add(new Players(labelScorePlayer1.Text, labelPlayer1.Text, isPlayer1Computer, player1Turn));
+            Players.Add(new Players(labelScorePlayer2.Text, labelPlayer2.Text, isPlayer2Computer, player2Turn));
+            Players.Add(new Players(labelScorePlayer3.Text, labelPlayer3.Text, isPlayer3Computer, player3Turn));
+            Players.Add(new Players(labelScorePlayer4.Text, labelPlayer4.Text, isPlayer4Computer, player4Turn));
+            Players.Add(new Players(labelScorePlayer5.Text, labelPlayer5.Text, isPlayer5Computer, player5Turn));
 
         }
     }

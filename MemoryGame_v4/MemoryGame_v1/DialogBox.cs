@@ -31,7 +31,9 @@ namespace MemoryGame_v1
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
-
+            var a = new Form1();
+            this.Hide();
+            a.Show();
         }
 
         private void buttonQuit_Click(object sender, EventArgs e)
